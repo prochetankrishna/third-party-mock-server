@@ -1,0 +1,75 @@
+{
+  "reference_id": "CFMJ6FTL09O22UE1KC5NBD7ZMWKTMJB8",
+  "external_id": "CustomExternalID7349",
+  "status": {
+    "code": 300,
+    "description": "Transaction successfully completed",
+    "updated_on": "2019-10-06T21:25:03.420503Z"
+  },
+  "numbering": {
+    "original": {
+      "phone_number": "7833012348",
+      "complete_phone_number": "17833012348",
+      "country_code": "1"
+    },
+    "cleansing": {
+      "call": {
+        "cleansed_code": 105,
+        "country_code": "1",
+        "max_length": 10,
+        "min_length": 10,
+        "phone_number": "7833012348"
+      },
+      "sms": {
+        "cleansed_code": 105,
+        "country_code": "1",
+        "max_length": 10,
+        "min_length": 10,
+        "phone_number": "7833012348"
+      }
+    }
+  },
+  "phone_type": {
+    "code": "10",
+    "description": "PERSONAL"
+  },
+  "carrier": {
+    "name": "Verizon"
+  },
+  "risk": {
+    "level": "high",
+    "recommendation": "block",
+    "score": 601
+  },
+  "risk_insights": {
+    "status": 800,
+    "category": [
+      10020
+    ],
+    "a2p": [
+      20001,
+      20101,
+      21002
+    ],
+    "p2p": [
+      30001,
+      30101,
+      30201,
+      30301,
+      31003,
+      32102
+    ],
+    "number_type": [
+      40001,
+      40011
+    ],
+    "ip": [
+      50003,
+      50004
+    ],
+    "email": [
+      60007,
+      60008
+    ]
+  }
+}
