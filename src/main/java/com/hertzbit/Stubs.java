@@ -11,7 +11,7 @@ public class Stubs {
     public WireMockServer wireMockServer;
 
     public Stubs setUpWireMockServer() {
-        this.wireMockServer = new WireMockServer(8080);
+        this.wireMockServer = new WireMockServer(8096);
         this.wireMockServer.start();
         System.out.println(this.wireMockServer.baseUrl());
         this.jsonUtil = new JsonUtil();
