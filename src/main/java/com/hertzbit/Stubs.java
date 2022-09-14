@@ -4,14 +4,14 @@ import com.github.tomakehurst.wiremock.WireMockServer;
 import com.hertzbit.utils.JsonUtil;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
-
+import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.options;
 public class Stubs {
 
     private JsonUtil jsonUtil;
     public WireMockServer wireMockServer;
 
     public Stubs setUpWireMockServer() {
-        this.wireMockServer = new WireMockServer(8096);
+        this.wireMockServer = new WireMockServer(options().bindAddress("http://43.205.243.206/").port(8096));
         this.wireMockServer.start();
         System.out.println(this.wireMockServer.baseUrl());
         this.jsonUtil = new JsonUtil();
