@@ -11,7 +11,7 @@ public class Stubs {
     public WireMockServer wireMockServer;
 
     public Stubs setUpWireMockServer() {
-        this.wireMockServer = new WireMockServer(options().bindAddress("http://43.205.243.206/").port(8096));
+        this.wireMockServer = new WireMockServer(options().bindAddress("43.205.243.206").port(8096));
         this.wireMockServer.start();
         System.out.println(this.wireMockServer.baseUrl());
         this.jsonUtil = new JsonUtil();
